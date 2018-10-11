@@ -21,14 +21,17 @@ if (news.status === "ok") {
                 </section>
 
                 <img src="${article.urlToImage}" />
+
                 <address class="article-citation">
                     <div class="author">${article.author}</div>
-                
-                    <a class="source">${article.url}</a>
-                
+
+                    <a href="${article.url}" class="source">Read more</a>
+
                     <time pubdate class="published">${article.publishedAt}</time>
                 </address>
             </article>
+
+            <hr>
             `;
 
             newsContainer.insertAdjacentHTML('beforeend', newsArticles);

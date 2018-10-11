@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-image: url('newspaper.png');
+    background-attachment: fixed;
+    color: white;
+}
+
+.background {
+
+}
+
+header {
+    width: 100%;
+
+
+}
+
+    .page-header {
+        position: fixed;
+        padding: 1em;
+        margin-top: -6em;
+        background: rgba(15, 31, 13, 1);
+        border-bottom: 5px solid rgba(146, 146, 31, 1);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 3em;
+    }
+
+main {
+    width: 95%;
+    background: rgba(0, 0, 0, 0.9);
+    margin: 6em auto 1em auto;
+    z-index:  2;
+
+}
+
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+        .article-header {
+            text-align: center;
+        }
+
+            .article-title {
+                padding: 0;
+            }
+
+        .description {
+            width: 50%;
+            text-align: center;
+        }
+
+        img {
+            width:50%;
+        }
+
+        .article-citation {
+            text-decoration: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .author {
+                font-weight: bold;
+                flex: 50%;
+            }
+
+            .published {
+                width: 50%;
+                font-weight: bold;
+                font-style: italic;
+
+            }
+
+            .source {
+                text-decoration: none;
+                background: rgba(82, 77, 77, 0.75);
+                color: yellow;
+                align-self: center;
+                padding: 2px;
+                border: 2px solid black;
+
+            }
+
+@media screen and (max-width: 780px) {
+
+    img {
+        width: 100%;
+    }
+
+    .description {
+        width: 100%;
+    }
+    main {
+        background: rgba(0, 0, 0, 0.7);
+
+    }
+    .author {
+        padding-top: 1em;
+    }
+}
